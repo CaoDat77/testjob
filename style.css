@@ -10,6 +10,33 @@
   color: #3c64b1;
 }
 
+.menu {
+  width: 70%;
+  background-color: #dadada;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.menu ul li {
+  padding: 2rem;
+  font-size: 2.2rem;
+}
+
+.menu-btn {
+  display: none;
+}
+
 .text-color {
   color: #373f41;
 }
@@ -48,7 +75,6 @@ footer {
 
 ul {
   list-style: none;
-  display: flex;
   font-weight: 600;
   font-size: 1.4rem;
   color: #373f41;
@@ -156,6 +182,10 @@ ul li:hover {
   width: 50%;
 }
 
+.col-lg-4 {
+  width: 33.33333%;
+}
+
 .col-lg-3 {
   width: 25%;
 }
@@ -188,6 +218,10 @@ ul li:hover {
   font-weight: 700;
 }
 
+.info {
+  display: flex;
+}
+
 .font-400 {
   font-weight: 400;
 }
@@ -197,6 +231,10 @@ ul li:hover {
   border: none;
   color: white;
   padding: 1.1rem 2rem;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .banner {
@@ -282,165 +320,95 @@ input {
   gap: 2rem;
 }
 
+.none {
+  display: none;
+}
+
+.discrip {
+  display: flex;
+}
+
+.moreInfo {
+  display: flex;
+}
+
 @media only screen and (max-width: 768px) {
   /* For desktop: */
   .container {
-    margin: 0 3rem;
+    margin: 0 1rem;
   }
 
-  .mgt-80 {
+  .none {
+    display: block;
+  }
+
+  .nav-pc {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+    font-size: 4rem;
+  }
+
+  .mgt-sm-20 {
     margin-top: 2rem;
   }
 
-  .mgt-20 {
-    margin-top: 0.5rem;
-  }
-
-  .mgt-10 {
-    margin-top: 0.25rem;
-  }
-
-  .mgt-40 {
-    margin-top: 1rem;
-  }
-
-  .mgt-60 {
-    margin-top: 1.5rem;
-  }
-
-  .gap-56 {
-    gap: 1.4rem;
-  }
-
-  .pd-x {
-    padding: 0 1.25rem;
-  }
-
-  .font-16 {
-    font-size: 0.4rem;
-  }
-
-  .font-30 {
-    font-size: 0.75rem;
-  }
-
-  .logo {
-    width: 1.65rem;
-    height: 0.9rem;
-  }
-
-  ul {
-    font-size: 0.5rem;
-  }
-
-  .font-14 {
-    font-size: 0.35rem;
-  }
-
-  .font-12 {
-    font-size: 0.3rem;
-  }
-
-  .font-18 {
-    font-size: 0.45rem;
-  }
-
-  ul li {
-    padding: 0 0.5rem;
-  }
-
-  .btn-start {
-    padding: 0.25rem 0.5rem;
-    margin-left: 0.5rem;
+  .login {
+    display: none;
   }
 
   .text-banner {
-    padding: 3.75rem 0;
-    line-height: 1.1rem;
+    text-align: center;
+    width: 100%;
+    color: #373f41;
+    line-height: unset;
+    padding: 8rem 1rem;
   }
 
-  .font-44 {
-    font-size: 1.1rem;
-    line-height: 1.37rem;
+  .discrip {
+    display: block;
   }
 
-  .sub-notes {
-    color: #737b7d;
-    font-size: 0.4rem;
-    font-weight: 400;
-    line-height: 0.5rem;
+  .info {
+    display: block;
   }
 
-  .text-banner p {
-    margin-top: 0.75rem;
+  .pd-x {
+    padding: unset;
   }
 
-  .btn-banner {
-    margin-top: 1rem;
+  .info .text-center {
+    margin-bottom: 3rem;
   }
 
-  .btn-banner button {
-    font-size: 0.4rem;
-    font-weight: 700;
-    padding: 0.25rem 0.5rem;
-    color: #3c64b1;
-  }
-
-  .btn-banner button:first-child {
-    margin-right: 0.6rem;
-  }
-
-  .icon-dis {
-    height: 0.75rem;
-    width: 0.75rem;
+  .col-lg-6 {
+    width: 100%;
   }
 
   .pd-l-40 {
-    padding-left: 1rem;
+    padding: unset;
   }
-
   .pd-r-60 {
-    padding-right: 1.5rem;
-  }
-
-  .pimary-btn {
-    font-size: 0.35rem;
-    font-weight: 700;
-    background-color: #3c64b1;
-    padding: 0.25rem 0.5rem;
-    color: white;
-    border: none;
-  }
-
-  input {
-    padding: 0.25rem 0.5rem;
-    font-size: 0.35rem;
-    background-color: #f4f5f4;
-    border: none;
-    outline: none;
-    font-weight: 500;
-    width: 72%;
-    color: #737b7d;
-  }
-
-  .gap-20 {
-    gap: 0.5rem;
-  }
-
-  .gap-30 {
-    gap: 0.75rem;
+    padding: unset;
   }
 
   .pd-r-90 {
-    padding-right: 2.6rem;
+    padding: unset;
   }
 
-  .icon {
-    width: 0.75rem;
-    height: 0.75rem;
+  .moreInfo {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .col-lg-3 {
+    width: calc(50% - 1rem);
+    margin-bottom: 1.5rem;
   }
 
   .gap-80 {
-    gap: 2rem;
+    gap: 1rem;
   }
 }

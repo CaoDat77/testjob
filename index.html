@@ -6,22 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <div class="container">
         <nav>
+          <div class="menu-btn">
+            <i class="bx bx-menu"></i>
+          </div>
+
           <div class="logo">
             <img src="Logo.png" alt="" />
           </div>
 
-          <ul>
+          <ul class="d-flex nav-pc">
             <li>Features</li>
             <li>Pricing</li>
             <li>Contact</li>
           </ul>
 
-          <div class="d-flex align-center">
+          <div class="d-flex align-center login">
             <div class="pimary-color font-14 font-700 pointer">Log In</div>
             <button
               class="btn-start font-14 font-700 pimary-background pointer"
@@ -29,6 +37,8 @@
               Start now
             </button>
           </div>
+
+          <div class="none"></div>
         </nav>
       </div>
       <div class="banner">
@@ -48,11 +58,33 @@
           </div>
         </div>
       </div>
+
+      <div class="menu">
+        <div class="" style="margin-top: 4rem">
+          <div
+            class="d-flex justify-between align-center"
+            style="padding: 0 2rem"
+          >
+            <div class="logo" style="width: 8rem">
+              <img src="Logo.png" alt="" />
+            </div>
+            <div class="close" style="font-size: 3rem">X</div>
+          </div>
+
+          <ul style="margin-top: 3rem">
+            <li>Features</li>
+            <li>Pricing</li>
+            <li>Contact</li>
+            <li>Log In</li>
+            <li>Start now</li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
       <section>
-        <div class="container mgt-80">
-          <div class="text-center">
+        <div class="container">
+          <div class="text-center mgt-80">
             <h1 class="font-30 font-700 text-color">
               Grow your business with better Shipping
             </h1>
@@ -61,7 +93,7 @@
             </p>
           </div>
 
-          <div class="d-flex mgt-60 text-color pd-x gap-56">
+          <div class="info mgt-60 text-color pd-x gap-56">
             <div class="text-center">
               <div class="icon-dis">
                 <img src="icon-1.png" alt="" />
@@ -109,7 +141,7 @@
 
       <section>
         <div class="container mgt-80">
-          <div class="d-flex">
+          <div class="discrip">
             <div class="col-lg-6">
               <img style="width: 100%" src="pic-1.png" alt="" />
             </div>
@@ -144,8 +176,8 @@
       </section>
 
       <section>
-        <div class="container mgt-80">
-          <div class="d-flex">
+        <div class="container">
+          <div class="discrip mgt-80">
             <div class="col-lg-6 text-color d-flex align-center">
               <div class="pd-r-60">
                 <h1 class="font-30 font-700 pd-r-90">
@@ -175,7 +207,7 @@
               </div>
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-lg-6 mgt-sm-20">
               <img style="width: 100%" src="pic-2.png" alt="" />
             </div>
           </div>
@@ -183,8 +215,8 @@
       </section>
 
       <section>
-        <div class="container mgt-80 text-color">
-          <div class="d-flex gap-80">
+        <div class="container text-color">
+          <div class="moreInfo gap-80 mgt-80">
             <div class="col-lg-3 text-center">
               <div>
                 <img src="pic-3.png" alt="" style="width: 100%" />
@@ -240,9 +272,8 @@
         </div>
       </section>
     </main>
-    
-    <footer>
-      
-    </footer>
+
+    <footer></footer>
+    <script src="index.js"></script>
   </body>
 </html>
